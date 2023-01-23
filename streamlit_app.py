@@ -44,7 +44,6 @@ streamlit.dataframe(my_data_rows)
 
 #Allow the end user to add a fruit to the list
 add_my_fruit = streamlit.header("What would you like to add? "
-streamlit.dataframe('Thanks for adding', add_my_fruit)                             
+streamlit.write('Thanks for adding ', add_my_fruit)                             
 
-fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado', 'Strawberries'])
-fruits_to_show = my_fruit_list.loc[fruits_selected]
+
